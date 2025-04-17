@@ -1,0 +1,71 @@
+header {
+    width: 1920px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem 88px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    gap: 200px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.lang-button {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 9999px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    transition: box-shadow 0.3s ease;
+}
+
+.lang-button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.lang-menu {
+    position: absolute;
+    right: 0;
+    margin-top: 0.5rem;
+    background: white;
+    border: 1px solid #d1d5db;
+    /* Tailwind's gray-300 */
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 30;
+    overflow: hidden;
+}
+
+.lang-menu ul {
+    list-style: none;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: #1f2937;
+}
+
+.lang-menu li {
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.lang-menu li:hover {
+    background-color: #f3f4f6;
+    /* Tailwind's gray-100 */
+}

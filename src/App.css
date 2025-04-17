@@ -1,0 +1,11 @@
+/* src/App.css или src/Header.css */
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
