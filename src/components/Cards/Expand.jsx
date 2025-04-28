@@ -9,26 +9,27 @@ export default function ExpandedCard({ card, onCollapse }) {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
-      transition={{ duration: 0.3 }}
+      transition={{ duration: 0.4 }}
     >
-      {/* Добавляем изображение */}
       <img 
         src={card.overlayImage} 
         alt={card.title} 
         className="expanded-card-image" 
       />
+      <div className="extra-wrapper">
+        <h2 className="second-heading">{card.title}</h2>
+        <p className="paragraf">{card.expandedContent}</p>
+      
 
-      <h2 className='second-heading'>{card.title}</h2>
-      <p className='paragraf'>{card.expandedContent}</p>
-
-      <button onClick={onCollapse} className="expand-button">
-        <motion.div
-          animate={{ rotate: 180 }}
-          transition={{ duration: 0.3 }}
-        >
-          <ChevronDown size={18} />
-        </motion.div>
-      </button>
+        <button onClick={onCollapse} className="expand-button">
+          <motion.div
+            animate={{ rotate: 180 }}
+            transition={{ duration: 0.3 }}
+          >
+            <ChevronDown size={18} />
+          </motion.div>
+        </button>
+      </div>
     </motion.div>
   );
 }

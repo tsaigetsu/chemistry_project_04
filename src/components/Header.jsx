@@ -16,10 +16,10 @@ export default function Header() {
   return (
     <header>
       <nav className="main-nav">
-        <a className="links" href="#colorants">Colorants</a>
-        <a className="links" href="#preservatives">Preservatives</a>
-        <a className="links" href="#flavor-enhancers">Flavor Enhancers</a>
-        <a className="links" href="#myths">Myths</a>
+        <a className="links" href="#Colorants">Colorants</a>
+        <a className="links" href="#Preservatives">Preservatives</a>
+        <a className="links" href="#Flavor-Enhancers">Flavor Enhancers</a>
+        <a className="links" href="#Myths">Myths</a>
       </nav>
 
       <div className="language-selector">

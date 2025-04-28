@@ -78,7 +78,7 @@ const cardsData = {
     {
       id: 10,
       title: "Sodium Benzoate",
-      content: "Helps prevent spoilage in acidic drinks like sodas and lemonades.",
+      content: "Helps prevent spoilage in acidic drinks.",
       expandedContent: "Sodium benzoate is a preservative used mainly in acidic foods and beverages, such as sodas, fruit juices, and pickles. It prevents the growth of microorganisms that could cause spoilage. It is generally recognized as safe when used within regulatory limits, though high amounts should be avoided.",
       image: "/images/lemonade.jpg",
       overlayImage: "/images/sodium_benzoate.jpg",
@@ -86,7 +86,7 @@ const cardsData = {
     {
       id: 11,
       title: "Sulfites",
-      content: "Used in dried fruits and wines to prevent browning and spoilage.",
+      content: "Used in dried fruits to prevent browning and spoilage.",
       expandedContent: "Sulfites are compounds that help preserve the color and freshness of dried fruits, wines, and some processed foods. They prevent oxidative browning and microbial spoilage. While generally safe, sulfites can cause allergic reactions in sensitive individuals, particularly asthmatics.",
       image: "/images/canned_fruit.jpg",
       overlayImage: "/images/sulfites.jpg",
