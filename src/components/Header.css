@@ -1,6 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 header {
-    width: 1920px;
-    max-width: 1920px;
+    width: 100%;
     margin: 0 auto;
     padding: 1rem 88px;
     background-color: white;
@@ -12,14 +15,35 @@ header {
 
 .main-nav {
     display: flex;
-    gap: 200px;
+    gap: 100px;
     font-size: 1.125rem;
     font-weight: 500;
     color: #1f2937;
+    margin: 0 50px 0 100px
 }
 
-.main-nav a:hover {
-    text-decoration: underline;
+.links {
+    text-decoration: none;
+    color: #000;
+    padding: 0.2rem 1rem;
+    border: 1px solid #000000;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.links:hover, .links:focus {
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 24px;
+    transition: x;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.language-selector {
+    margin: 0 100px 0 50px;
 }
 
 .lang-button {
@@ -30,7 +54,7 @@ header {
     background: white;
     color: black;
     border: 1px solid black;
-    border-radius: 9999px;
+    border-radius: 24px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-weight: 600;
     transition: box-shadow 0.3s ease;
@@ -42,7 +66,7 @@ header {
 
 .lang-menu {
     position: absolute;
-    right: 0;
+    right: 1;
     margin-top: 0.5rem;
     background: white;
     border: 1px solid #d1d5db;

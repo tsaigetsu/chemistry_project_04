@@ -22,7 +22,7 @@ section {
     text-align: center;
 }
 
-.card-container {
+.card-section {
     display: flex;
     gap: 1rem;
     overflow-x: auto;
@@ -31,7 +31,21 @@ section {
     max-width: 1250px;
     margin: 0 auto;
     padding: 1rem;
+}
 
+.expanded-card {
+    width: 440px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 24px;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    box-shadow: -1px 1px 10px rgba(10, 10, 10, 0.4);
+    padding: 1rem;
+}
+
+.expanded-card-image {
+    width: 400px;
 }
 
 .card {

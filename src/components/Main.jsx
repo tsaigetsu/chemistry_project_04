@@ -1,144 +1,12 @@
 // src/Main.jsx
 import React from "react";
 import "./Main.css";
+import CardSection from "./Cards/CardSection.jsx";
 
 export default function Main() {
   return (
     <main className="main">
-      <section id="colorants">
-        <h2 className="second-heading">Colorants</h2>
-        <div className="card-container">
-          {/* Карточка 1 */}
-          <div className="card">
-            <div className="card-image">
-              <img
-                src="../images/cheddar.png"
-                alt="Cheddar cheese"
-                className="food-image"
-              />
-              <img
-                src="../images/annatto.png"
-                alt="Annatto colorant"
-                className="overlay-image"
-              />
-            </div>
-            <div className="card-content">
-              <h3 className="third-heading">Annatto</h3>
-              <p className="paragraf">
-                Natural orange-red colorant from Bixa orellana seeds.
-              </p>
-              <button className="expand-button">&#x25BC;</button>
-            </div>
-          </div>
-
-          {/* Карточка 2 */}
-          <div className="card">
-            <div className="card-image">
-              <img
-                src="../images/curry.png"
-                alt="Curry with turmeric"
-                className="food-image"
-              />
-              <img
-                src="images/curcumin.jpg"
-                alt="Curcumin colorant"
-                className="overlay-image"
-              />
-            </div>
-            <div className="card-content">
-              <h3 className="third-heading">Curcumin</h3>
-              <p className="paragraf">Yellow pigment from turmeric.</p>
-              <button className="expand-button">&#x25BC;</button>
-            </div>
-          </div>
-
-          {/* Карточка 3 */}
-          <div className="card">
-            <div className="card-image">
-              <img
-                src="../images/beetrood.jpg"
-                alt="Beetroot salad"
-                className="food-image"
-              />
-              <img
-                src="../images/betanin.jpg"
-                alt="Betanin colorant"
-                className="overlay-image"
-              />
-            </div>
-            <div className="card-content">
-              <h3 className="third-heading">Betanin</h3>
-              <p className="paragraf">
-                Extracted from beets, adds strong red color.
-              </p>
-              <button className="expand-button">&#x25BC;</button>
-            </div>
-          </div>
-
-          {/* Карточка 4 */}
-          <div className="card">
-            <div className="card-image">
-              <img
-                src="../images/berries.jpg"
-                alt="Berry yogurt"
-                className="food-image"
-              />
-              <img
-                src="../images/anthocyanins.jpg"
-                alt="Anthocyanin colorant"
-                className="overlay-image"
-              />
-            </div>
-            <div className="card-content">
-              <h3 className="third-heading">Anthocyanins</h3>
-              <p className="paragraf">Blue-purple pigments found in berries.</p>
-              <button className="expand-button">&#x25BC;</button>
-            </div>
-          </div>
-
-          {/* Карточка 5 */}
-          <div className="card">
-            <div className="card-image">
-              <img
-                src="../images/carrots.jpg"
-                alt="Carrot cake"
-                className="food-image"
-              />
-              <img
-                src="../images/carotenoids.jpg"
-                alt="Carotenoids colorant"
-                className="overlay-image"
-              />
-            </div>
-            <div className="card-content">
-              <h3 className="third-heading">Carotenoids</h3>
-              <p className="paragraf">Orange pigments from carrots.</p>
-              <button className="expand-button">&#x25BC;</button>
-            </div>
-          </div>
-
-          {/* Карточка 6 */}
-          <div className="card">
-            <div className="card-image">
-              <img
-                src="../images/red_cabbage.jpg"
-                alt="Red cabbage salad"
-                className="food-image"
-              />
-              <img
-                src="../images/anthocyanins_cabbage.jpg"
-                alt="Anthocyanins from cabbage"
-                className="overlay-image"
-              />
-            </div>
-            <div className="card-content">
-              <h3 className="third-heading">Anthocyanins</h3>
-              <p className="paragraf">Purple pigments from red cabbage.</p>
-              <button className="expand-button">&#x25BC;</button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <CardSection />
 
       <section id="preservatives">
         <h2 className="second-heading">Preservatives</h2>
@@ -302,7 +170,7 @@ export default function Main() {
               />
             </div>
             <div className="card-content">
-              <h3 className="third-heading">Monosodium Glutamate (MSG)</h3>
+              <h3 className="third-heading">Monosodium Glutamate</h3>
               <p className="paragraf">
                 Boosts umami flavor in snacks, soups, and processed foods.
               </p>
