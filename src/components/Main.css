@@ -30,9 +30,13 @@ section {
     scroll-behavior: smooth;
     padding-bottom: 1rem;
     width: 1250px;
-    height: 620px;
+    height: 660px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+.card-section div {
+    cursor: pointer;
 }
 
 .expanded-card {
@@ -64,6 +68,7 @@ section {
 
 .card {
     flex: 0 0 400px;
+    height: 620px;
     position: relative;
     background-color: #fff;
     border-radius: 24px;

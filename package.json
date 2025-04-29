@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "framer-motion": "^12.9.2",
+    "i18next": "^25.0.2",
     "lucide-react": "^0.488.0",
     "npm": "^11.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-i18next": "^15.5.1",
     "swiper": "^11.2.6"
   },
   "devDependencies": {
