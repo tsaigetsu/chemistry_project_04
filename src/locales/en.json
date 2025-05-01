@@ -1,0 +1,22 @@
+{
+  "header": {
+  "Colorants": "Colorants",
+  "Preservatives": "Preservatives",
+  "FlavorEnhancers": "Flavor Enhancers",
+  "Myths": "Myths",
+  "Chemical Food": "Chemical Food - Do You Know What You Eat?",
+  "About Text": "This project dives into the world of food additives — colorants, preservatives, and flavor enhancers — that are often present in our daily meals. You'll discover how these substances work, why they're used, and where they come from."
+    },
+  "about": {
+    "title": "Chemical Food - Do You Know What You Eat?",
+    "description": "This project dives into the world of food additives — colorants, preservatives, and flavor enhancers — that are often present in our daily meals. You'll discover how these substances work, why they're used, and where they come from. Our aim is to raise awareness about what's really inside your food and help you make informed choices when reading labels or buying groceries."
+  },
+  "sections": {
+    "colorants": "Colorants",
+    "preservatives": "Preservatives",
+    "flavorEnhancers": "Flavor Enhancers",
+    "myths": "Myths"
+  },
+  "footer": "© 2024 Made by Vladyslav \"tsaigetsu\" Stremetskyi. All rights reserved."
+}
+

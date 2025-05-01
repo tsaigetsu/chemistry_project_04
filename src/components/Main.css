@@ -75,6 +75,7 @@ section {
     box-shadow: -1px 1px 10px rgba(10, 10, 10, 0.4);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 272px;
 }
 
 
@@ -145,4 +146,24 @@ section {
 
 .expand-button:hover {
     transform: scale(1.2);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: #007bff;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+    transform: translateY(-4px);
 }

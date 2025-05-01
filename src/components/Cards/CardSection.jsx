@@ -1,16 +1,17 @@
-import { useState } from 'react';
-import Card from './Card.jsx';
-import ExpandedCard from './Expand.jsx';
-import { AnimatePresence, motion } from 'framer-motion';
-import cardsData from '../../cardsData.js';
+import { useState } from "react";
+import Card from "./Card.jsx";
+import ExpandedCard from "./Expand.jsx";
+import { AnimatePresence, motion } from "framer-motion";
+import cardsData from "../../cardsData.js";
+import { useTranslation } from "react-i18next"; // Подключаем
 
-export default function CardsSection({ startId, endId, title }) {  // <--- Принимаем title
+export default function CardsSection({ startId, endId, titleKey }) {
   const [expandedCardId, setExpandedCardId] = useState(null);
   const [isCollapsing, setIsCollapsing] = useState(false);
+  const { t } = useTranslation(); // Хук для перевода
 
   const handleExpand = (id) => {
     setIsCollapsing(true);
-
     setTimeout(() => {
       setExpandedCardId(id);
       setIsCollapsing(false);
@@ -23,27 +24,34 @@ export default function CardsSection({ startId, endId, title }) {  // <--- Пр�
 
   const expandedCard = Object.values(cardsData)
     .flat()
-    .find(card => card.id === expandedCardId);
+    .find((card) => card.id === expandedCardId);
 
   const cards = Object.values(cardsData)
     .flat()
-    .filter(card => card.id >= startId && card.id <= endId);
+    .filter((card) => card.id >= startId && card.id <= endId);
 
   return (
-    <section id={`${title}`} className={`cards-section ${expandedCard ? 'no-scroll' : ''}`}>
-      {/* Добавляем заголовок */}
-      <h2 className="second-heading">{title}</h2> 
-
+    <section
+      id={`${titleKey}`}
+      className={`cards-section ${expandedCard ? "no-scroll" : ""}`}
+    >
+      <h2 className="second-heading">{t(titleKey)}</h2> {/* Здесь перевод */}
       <div className="card-section">
         <AnimatePresence mode="wait">
           {expandedCard ? (
-            <ExpandedCard key="expanded" card={expandedCard} onCollapse={handleCollapse} />
+            <ExpandedCard
+              key="expanded"
+              card={expandedCard}
+              onCollapse={handleCollapse}
+            />
           ) : (
             cards.map((card) => (
               <motion.div
                 key={card.id}
                 initial={{ opacity: 1, y: 0 }}
-                animate={isCollapsing ? { opacity: 0, y: 50 } : { opacity: 1, y: 0 }}
+                animate={
+                  isCollapsing ? { opacity: 0, y: 50 } : { opacity: 1, y: 0 }
+                }
                 exit={{ opacity: 0, y: 50 }}
                 transition={{ duration: 0.4 }}
               >

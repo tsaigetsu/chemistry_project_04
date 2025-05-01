@@ -1,0 +1,24 @@
+{
+  "header": {
+  "Colorants": "Barwniki",
+  "Preservatives": "Konserwanty",
+  "FlavorEnhancers": "Wzmacniacze smaku",
+  "Myths": "Mity",
+  "Chemical Food": "Chemiczne Jedzenie - Czy wiesz, co jesz?",
+  "About Text": "Ten projekt zagłębia się w świat dodatków do żywności — barwników, konserwantów i wzmacniaczy smaku — które często znajdują się w naszych codziennych posiłkach. Dowiesz się, jak działają te substancje, dlaczego są używane i skąd pochodzą."
+  },
+
+  "about": {
+    "title": "Chemia w żywności — czy wiesz, co jesz?",
+    "description": "Ten projekt zagłębia się w świat dodatków do żywności — barwników, konserwantów i wzmacniaczy smaku — które często występują w naszych codziennych posiłkach. Dowiesz się, jak działają te substancje, dlaczego są stosowane i skąd pochodzą. Naszym celem jest zwiększenie świadomości na temat tego, co naprawdę znajduje się w Twojej żywności, oraz pomoc w podejmowaniu świadomych decyzji podczas czytania etykiet i robienia zakupów."
+  },
+
+  "sections": {
+    "colorants": "Barwniki",
+    "preservatives": "Konserwanty",
+    "flavorEnhancers": "Wzmacniacze smaku",
+    "myths": "Mity"
+  },
+   "footer": "© 2024 Stworzone przez Vladyslawa \"tsaigetsu\" Stremetskiego. Wszelkie prawa zastrzeżone."
+}
+

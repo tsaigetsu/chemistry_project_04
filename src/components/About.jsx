@@ -1,22 +1,16 @@
-//src/components/About.jsx
+// src/components/About.jsx
 import "./About.css";
+import { useTranslation } from "react-i18next";
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="about-section">
       <div className="about-wrapper">
         <div className="text-wrapper">
-          <h1 className="first-heading">
-            Chemical Food - Do You Know What You Eat?
-          </h1>
-          <p className="paragraf">
-            This project dives into the world of food additives — colorants,
-            preservatives, and flavor enhancers — that are often present in our
-            daily meals. You'll discover how these substances work, why they're
-            used, and where they come from. Our aim is to raise awareness about
-            what's really inside your food and help you make informed choices
-            when reading labels or buying groceries.
-          </p>
+          <h1 className="first-heading">{t("about.title")}</h1>
+          <p className="paragraf">{t("about.description")}</p>
         </div>
         <div className="gallery-wrapper">
           <img
