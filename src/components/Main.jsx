@@ -10,14 +10,10 @@ export default function Main() {
   return (
     <main className="main">
       <AboutSection />
-      <CardSection startId={1} endId={6} titleKey="sections.colorants" />
-      <CardSection startId={7} endId={12} titleKey="sections.preservatives" />
-      <CardSection
-        startId={13}
-        endId={18}
-        titleKey="sections.flavorEnhancers"
-      />
-      <CardSection startId={19} endId={24} titleKey="sections.myths" />
+      <CardSection startId={1} endId={6} titleKey="Colorants" />
+      <CardSection startId={7} endId={12} titleKey="Preservatives" />
+      <CardSection startId={13} endId={18} titleKey="Flavor-Enhancers" />
+      <CardSection startId={19} endId={24} titleKey="Myths" />
       <ScrollToTopButton />
     </main>
   );
